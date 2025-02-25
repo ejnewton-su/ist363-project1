@@ -8,20 +8,34 @@
     <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
     <title>Project 1</title>
 </head>
+
 <body>
    
       
-        <ons-page>
-          <ons-toolbar style="background-color: gainsboro;">
-            <div class="center">Nav Bar</div>
-          </ons-toolbar>
-          <h1 style="text-align: center;">Project 1</h1>
-        <div style="display:flex; justify-content:center; align-items: center;">
-          <img class="" style="margin: 20px; background-color: white; padding: 80px; width: 70%; max-width: 500px; min-width: 200px;" src="images/onsenui-logo-1.png" alt="Onsen UI Logo">
-          <p style="position: absolute; top: 80%; left: 50%;
-              color: white; font-size: 24px; font-weight: bold; background-color: rgba(0, 0, 0, 0.5);">Onsen UI is an open-source UI framework and components for HTML5 hybrid mobile app development, based on PhoneGap / Cordova. It allows developers to create mobile apps using Web technologies like CSS, HTML5, and JavaScript.</p>
-        </div>
-        </ons-page>
+  <ons-page>
+    <ons-tabbar position="top">
+      <ons-tab label="Home"></ons-tab>
+      <ons-tab label="Search"></ons-tab>
+      <ons-tab label="About"></ons-tab>
+    </ons-tabbar>
+  
+    <h1 style="text-align: center;">Project 1</h1>
+  
+    <div style="display: flex; justify-content: center; align-items: center; position: relative;">
+      
+      <img style="margin: 20px; width: 70%; max-width: 500px; min-width: 300px;" 
+           src="images/onsenui-logo-1.png" alt="Onsen UI Logo">
+  
+      
+      <div class="text-overlay" 
+           style="position: absolute; top: 130%; left: 50%; transform: translate(-50%, -50%);
+                  color: black; font-weight: bold; text-align: center; font-size: 2.5vw; 
+                  padding: 10px; max-width: 120%; background-color: white;">
+        Onsen UI is an open-source UI framework and components for HTML5 hybrid mobile app development, based on PhoneGap / Cordova. It allows developers to create mobile apps using Web technologies like CSS, HTML5, and JavaScript.
+      </div>
+    </div>
+  </ons-page>
+  
       
     
       
