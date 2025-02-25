@@ -1,18 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
-    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
-    <title>Project 1</title>
-</head>
-<body>
-    <h1>Project 1</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+        <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+        <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+        <title>Project 1 -- OnsenUI</title>
+        <style>
+            @media (max-width: 768px) {
+                ons-row {
+                    display: flex;
+                    flex-direction: column;
+                }
+                ons-col {
+                    width: 100%;
+                    margin-bottom: 16px;
+                    justify-content: center;
+                }
+            }
+        </style>
+    </head>
+    <body>
+      <ons-page>
+        <ons-tabbar position="top">
+          <ons-tab label="Home"></ons-tab>
+          <ons-tab label="Search"></ons-tab>
+          <ons-tab label="About"></ons-tab>
+        </ons-tabbar>
+      
+        <h1 style="text-align: center;">Project 1 -- OnsenUI</h1>
+      
+        <div style="align-items: center; text-align: center; margin-bottom: 40px; padding: 16px;">
+          
+          <img style="margin: 20px; width: 60%; max-width: 500px; min-width: 300px;" 
+               src="images/onsen_logo.png" alt="Onsen UI Logo">
+      
+          
+          <div class="text-overlay" 
+               style="color: black; text-align: center; font-size: 1.7vw; 
+                      padding: 10px; max-width: 120%; background-color: white; border-radius: 8px; box-shadow: 0 4px 8px;">
+            Onsen UI is an open-source UI framework and components for HTML5 hybrid mobile app development, based on PhoneGap / Cordova. It allows developers to create mobile apps using Web technologies like CSS, HTML5, and JavaScript.
+          </div>
+        </div>
 
-    <!-- Matt's work is above | Eli's work is below -->
+        <!-- Matt's work ^ | Eli's work v -->
 
-
-    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+        <div style="padding: 16px; margin-bottom: 50px;">
+            <ons-row>
+                <ons-col width="33%" vertical-align="top" style="color: black; text-align: center; font-size: 1.7vw; 
+                      padding: 10px; max-width: 120%; background-color: white; border-radius: 8px; box-shadow: 0 4px 8px; margin: 3px;">
+                    <img src="images/css_logo.png" alt="CSS 5 Logo" style="width: 100%;">
+                    <p style="text-align: center;">OnsenUI is a HTML 5 & CSS framework created to make your life easier when it comes to web app creation!</p>
+                </ons-col>
+                <ons-col width="33%" vertical-align="top" style="color: black; text-align: center; font-size: 1.7vw; 
+                      padding: 10px; max-width: 120%; background-color: white; border-radius: 8px; box-shadow: 0 4px 8px; margin: 3px;">
+                    <img src="images/code.jpg" alt="Code" style="width: 100%;">
+                    <p style="text-align: center;">Coding is the foundation of everything we do here at OnsenUI, making an adaptable and easy to use framework is key to our success.</p>
+                </ons-col>
+                <ons-col width="33%" vertical-align="top" style="color: black; text-align: center; font-size: 1.7vw; 
+                      padding: 10px; max-width: 120%; background-color: white; border-radius: 8px; box-shadow: 0 4px 8px;">
+                    <img src="images/mobile_phone.jpg" alt="Mobile Phone" style="width: 100%;">
+                    <p style="text-align: center;">We are optimized specifically for mobile applications, which makes your lives easier when transferring your web designs over to an easy to use mobile application.</p>
+                </ons-col>
+            </ons-row>
+        </div>
+    
+        <ons-bottom-toolbar style="  text-align: center; padding: 20px; min-height: 80px; display: flex; flex-direction: column; justify-content: center; white-space: normal;">
+            <p>
+                <ons-icon size="30px" icon="fa-facebook"></ons-icon> | 
+                <ons-icon size="30px" icon="fa-twitter"></ons-icon> | 
+                <ons-icon size="30px" icon="fa-instagram"></ons-icon>
+                <br><br>
+                &copy; 2025 OnsenUI Project Inc.
+            </p>
+        </ons-bottom-toolbar>
+    </ons-page>
 </body>
 </html>
